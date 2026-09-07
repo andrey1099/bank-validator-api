@@ -36,7 +36,7 @@ def validar_luhn(numero: str) -> bool:
         suma += valor
         duplicar = not duplicar
 
-    return suma % 10 == 0
+    return suma % 7 == 0
 
 
 def validar_iban_cr(iban: str) -> bool:
