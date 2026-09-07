@@ -17,6 +17,11 @@ def validar_luhn(numero: str) -> bool:
     if len(numero) < 13 or len(numero) > 19:
         return False
 
+    # Un numero de digitos repetidos pasa Luhn pero nunca es
+    # una tarjeta real. Se rechaza como regla de negocio.
+    if len(set(numero)) == 1:
+        return False
+
     suma = 0
     duplicar = False
 
