@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.github/
+.pytest_cache/
+.idea/
+.vscode/
+*.md
+coverage.xml
