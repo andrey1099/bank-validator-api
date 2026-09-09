@@ -2,7 +2,7 @@
 
 import pytest
 
-from app.validators import validar_luhn, validar_iban_cr, enmascarar
+from app.validators import enmascarar, validar_iban_cr, validar_luhn
 
 
 class TestLuhn:
